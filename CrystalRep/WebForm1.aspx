@@ -10,7 +10,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+    <div style="direction: ltr">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <CR:CrystalReportViewer ID="CrystalReportViewer1" runat="server" AutoDataBind="true" />
     </div>
