@@ -17,7 +17,7 @@ namespace CrystalRep
         {
             CrystalReport1 rprt = new CrystalReport1();
             rprt.Load(Server.MapPath("~/CrystalReport1.rpt"));
-            SqlConnection con = new SqlConnection(@"Data Source = DESKTOP-E1MUI69; initial catalog = Northwind; integrated security = true;");
+            SqlConnection con = new SqlConnection(@"Data Source =.; initial catalog = Northwind; integrated security = true;");
             SqlCommand cmd = new SqlCommand("Proc_Product", con);
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
