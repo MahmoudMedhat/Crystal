@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<button class="report">Su</button>
+<a href="http://localhost:63937/WebForm1.aspx">Go</a>
+
+<iframe id="my_iframe" src="http://localhost:63937/WebForm1.aspx" style="width:700px;height:700px"></iframe>
+<script type="text/javascript">
+    document.getElementById('my_iframe').onload = function () {
+        __doPostBack('ctl00$ctl00$bLogout', '');
+    }
+</script>
+<!--OTHER STUFF-->
+<script>
+
+
+    $(".report").click(function () {
+        alert("")
+        $.ajax({
+            type: "Get",
+            url: "http://localhost:63937/WebForm1.aspx",
+
+        });
+    });
+
+
+</script>
